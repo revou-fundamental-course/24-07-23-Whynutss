@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pesona Indonesia</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="navbar-container">
+      <div class="logo">
+        <img src="assets/PesonaIndonesia.png" alt="logo" />
+      </div>
+      <nav class="nav-list">
+        <ul>
+          <li><a href="#home" onclick="scrollToSectionHome">Home</a></li>
+          <li>
+            <a href="#ourpackages" onclick="scrollToSectionOurPackages"
+              >Our Packages</a
+            >
+          </li>
+          <li>
+            <a href="#contactus" onclick="scrollToSectionContactUs"
+              >Contact Us</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="line"></div>
+    <main>
+      <div class="subtitle section-home">
+        <h2>Pesona Indonesia</h2>
+        <p>Jelajahi Dunia Bersama Kami</p>
+      </div>
+
+      <div class="main">
+        <div class="left">
+          <div class="slideshow">
+            <div class="myslide fade">
+              <img src="assets/bali.jpg" alt="bali" />
+              <div class="text">
+                <p>
+                  "Pengalaman yang sangat berharga bersama Pesona Indonesia"
+                </p>
+                <div class="text-detail">
+                  <img src="assets/orang.png" alt="orang" />
+                  <ul>
+                    <li><b>Sindi</b></li>
+                    <li><i>Mahasiswi, 21</i></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="myslide fade">
+              <img src="assets/yogya.jpg" alt="yogyai" />
+              <div class="text">
+                <p>
+                  "Beruntung sekali bisa menikmati indahnya Indonesia tentunya
+                  bersama Pesona Indonesia"
+                </p>
+                <div class="text-detail">
+                  <img src="assets/orang.png" alt="orang" />
+                  <ul>
+                    <li><b>Yusrom</b></li>
+                    <li><i>CEO, 30</i></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="myslide fade">
+              <img src="assets/bromo.jpg" alt="bromo" />
+              <div class="text">
+                <p>
+                  "Terimakasih Pesona Indonesia, pertama kalinya saya kesini dan
+                  sangat puas!"
+                </p>
+                <div class="text-detail">
+                  <img src="assets/orang.png" alt="orang" />
+                  <ul>
+                    <li><b>Ali</b></li>
+                    <li><i>Pelajar, 17</i></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <a class="previous" onclick="nextslide(-1)">&#10094;</a>
+            <a class="next" onclick="nextslide(1)">&#10095;</a>
+          </div>
+
+          <div class="short-line"></div>
+
+          <b>Mengapa Harus Kami?</b>
+
+          <div class="caption">
+            <div class="cap-bg"><b>1</b></div>
+            <b>Praktis Tanpa repot</b>
+          </div>
+          <p>
+            Bebas transaksi di mana saja dan kapan saja, mulai dari desktop,
+            aplikasi mobile, atau situs web mobile.
+          </p>
+
+          <div class="caption">
+            <div class="cap-bg"><b>2</b></div>
+            <b>Layanan terpercaya</b>
+          </div>
+          <p>Anda akan mendapat apa yang Anda bayar, dijamin!</p>
+
+          <div class="caption">
+            <div class="cap-bg"><b>3</b></div>
+            <b>Berbagai Pilihan Pembayaran</b>
+          </div>
+          <p>
+            Pembayaran jadi semakin fleksibel dengan berbagi pilihan, mulai dari
+            ATM, Transfer Bank, Kartu Kredit, Bayar Tunai di Konter, hingga
+            Internet Banking.
+          </p>
+
+          <div class="section-contactus"></div>
+          <div class="right section-contactus">
+            <h3 id="contactus">Contact Us</h3>
+            <p>
+              Sales akan menghubungi anda 1x24 jam setelah data kami terima.
+            </p>
+            <form action="#" id="form-contactus">
+              <label for="nama">Nama Lengkap</label>
+              <label for="error" class="error" id="error">Nama Lengkap</label>
+              <input
+                type="text"
+                name="nama"
+                id="nama"
+                placeholder="Nama Lengkap"
+              />
+              <label for="email">Email</label>
+              <label for="error" class="error" id="error">Email</label>
+              <input type="email" name="email" id="email" placeholder="Email" />
+              <label for="tujuan">Tujuan</label>
+              <label for="error" class="error" id="error">Tujuan</label>
+              <select name="tujuan" id="tujuan">
+                <option value="Bali">Bali</option>
+                <option value="Bromo">Bromo</option>
+                <option value="Japan">Japan</option>
+                <option value="Singapore">Singapore</option>
+                <option value="Banda Neira">Banda Neira</option>
+                <option value="Yogyakarta">Yogyakarta</option>
+              </select>
+              <input
+                type="button"
+                name="send"
+                id="send"
+                value="SEND"
+                onclick="validateForm()"
+              />
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="ourpackages" id="ourpackages">
+        <h2 id="ourpackages">Our Packages</h2>
+      </div>
+
+      <div class="content">
+        <div class="packages">
+          <div class="packages-item">
+            <img src="assets/content.png" alt="content" />
+            <ul>
+              <li><h3>Bali</h3></li>
+              <li>
+                Jelajahi Pulau Bali dengan keanekaragaman budaya, dan keindahan
+                alam nya
+              </li>
+            </ul>
+          </div>
+
+          <div class="packages-item">
+            <img src="assets/content.png" alt="content" />
+            <ul>
+              <li><h3>Bromo</h3></li>
+              <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+            </ul>
+          </div>
+
+          <div class="packages-item">
+            <img src="assets/content.png" alt="content" />
+            <ul>
+              <li><h3>Japan</h3></li>
+              <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+            </ul>
+          </div>
+
+          <div class="short-line" style="margin: 0 auto"></div>
+
+          <div class="packages-item">
+            <img src="assets/content.png" alt="content" />
+            <ul>
+              <li><h3>Singapore</h3></li>
+              <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+            </ul>
+          </div>
+
+          <div class="packages-item">
+            <img src="assets/content.png" alt="content" />
+            <ul>
+              <li><h3>Banda Neira</h3></li>
+              <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+            </ul>
+          </div>
+
+          <div class="packages-item">
+            <img src="assets/content.png" alt="content" />
+            <ul>
+              <li><h3>Yogyakarta</h3></li>
+              <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="line"></div>
+
+      <div class="content">
+        <div class="close">
+          <h2>Satu Langkah Untuk Bergabung Bersama Kami</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Reprehenderit autem fuga impedit molestiae dolor iusto voluptatibus
+            corrupti voluptatem id, facilis quae nesciunt qui beatae animi
+            adipisci ab ea tempora ducimus.
+          </p>
+          <input
+            type="button"
+            name="booknow"
+            id="booknow"
+            value="BOOK NOW"
+            onclick="scrollToSectionContactUs()"
+          />
+        </div>
+      </div>
+
+      <div class="line"></div>
+
+      <footer>
+        <a href="#home" style="margin: 0 auto"
+          ><img src="assets/PesonaIndonesia.png" class="img-logo" alt="logo"
+        /></a>
+        <ul>
+          <li>Terms of Service</li>
+          <li>Privacy Police</li>
+        </ul>
+        &copy RevoU 2023
+      </footer>
+    </main>
+
+    <div id="alert-success" class="alert">
+      <div class="alert-success">
+        <h3>Input berhasil</h3>
+        <div class="success-konten">
+          <div class="konten-kiri">
+            <p>Nama</p>
+            <p>Email</p>
+            <p>Tujuan</p>
+          </div>
+          <div class="konten-kanan">
+            <p id="data-name">Nama</p>
+            <p id="data-email">Email</p>
+            <p id="data-destination">Tujuan</p>
+          </div>
+        </div>
+        <p style="margin-top: 25px; text-align: center">
+          Sales akan menghubungi anda 1x24 jam setelah data kami terima.
+        </p>
+        <button onclick="closeAlertSuccess()">Tutup</button>
+      </div>
+    </div>
+
+    <script>
+      showslide(1);
+    </script>
+  </body>
+</html>
